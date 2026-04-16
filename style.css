@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url("wallpaper.png") no-repeat center center fixed;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+
+  background-color: rgba(30, 41, 59, 0.85);
+  padding: 25px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+}
+
+/* TÍTULO BRANCO */
+h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* SALDO */
+#saldo {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #4ade80;
+  font-weight: bold;
+}
+
+#valorSaldo {
+  font-family: 'Orbitron', sans-serif;
+  color: #166534;
+  font-size: 36px;
+}
+
+/* BOTÕES */
+.btn {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  box-shadow: 0 4px #000;
+}
+
+#depositar {
+  background-color: #4ade80;
+  color: #022c22;
+}
+
+#sacar {
+  background-color: #facc15;
+  color: #422006;
+}
+
+#extratoBtn {
+  background-color: #3b82f6;
+}
+
+#sair {
+  background-color: #ef4444;
+}
+
+.btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px #000;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* EXTRATO CINZA */
+.hidden {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* 👇 ALTERAÇÃO PEDIDA */
+li {
+  background-color: #334155;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+  color: #9ca3af; /* cinza */
+}
+
+/* RESPONSIVO */
+@media (max-width: 480px) {
+  #saldo {
+    font-size: 22px;
+  }
+
+  #valorSaldo {
+    font-size: 28px;
+  }
+
+  .btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
