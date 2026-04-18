@@ -134,3 +134,13 @@ li {
     font-size: 14px;
   }
 }
+/* buttons slightly bigger */
+button {
+  font-size: 17px;
+  padding: 16px;
+}
+
+/* grey labels */
+.label {
+  color: #cbd5e1;
+}
