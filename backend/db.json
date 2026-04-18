@@ -1,7 +1,7 @@
 {
   "usuarios": {
     "lucas": {
-      "saldo": 100,
+      "saldo": 50,
       "extrato": [
         {
           "tipo": "deposito",
@@ -12,6 +12,23 @@
           "tipo": "saque",
           "valor": 50,
           "data": "2026-04-18T14:13:06.624Z"
+        },
+        {
+          "tipo": "transferencia_envio",
+          "para": "ana",
+          "valor": 50,
+          "data": "2026-04-18T16:19:53.027Z"
+        }
+      ]
+    },
+    "ana": {
+      "saldo": 50,
+      "extrato": [
+        {
+          "tipo": "transferencia_recebida",
+          "de": "lucas",
+          "valor": 50,
+          "data": "2026-04-18T16:19:53.027Z"
         }
       ]
     }
