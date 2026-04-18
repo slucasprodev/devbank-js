@@ -1,0 +1,19 @@
+{
+  "usuarios": {
+    "lucas": {
+      "saldo": 100,
+      "extrato": [
+        {
+          "tipo": "deposito",
+          "valor": 150,
+          "data": "2026-04-18T14:12:52.085Z"
+        },
+        {
+          "tipo": "saque",
+          "valor": 50,
+          "data": "2026-04-18T14:13:06.624Z"
+        }
+      ]
+    }
+  }
+}

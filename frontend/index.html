@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>DevBank</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- LOGIN -->
+  <div class="container" id="loginBox">
+    <h2>🔐 Login</h2>
+    <input id="usuario" placeholder="Digite seu usuário" />
+    <button onclick="login()">Entrar</button>
+  </div>
+
+  <!-- APP -->
+  <div class="container" id="app" style="display:none;">
+
+    <h1>🏦 DevBank</h1>
+
+    <p>
+      Saldo: <span id="valorSaldo">R$ 0</span>
+    </p>
+
+    <div class="buttons">
+      <button id="depositar">Depositar</button>
+      <button id="sacar">Sacar</button>
+      <button id="extratoBtn">Extrato</button>
+      <button id="transferirBtn">Transferir</button>
+      <button id="sair">Sair</button>
+    </div>
+
+    <h3>📄 Extrato</h3>
+    <ul id="listaExtrato"></ul>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
